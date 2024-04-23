@@ -1,0 +1,116 @@
+@import "../../responsive.scss";
+.usercontainer{
+    width: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    .backlink{
+        text-decoration: none;
+        color: #292f36;
+        margin-left: 5%;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+        font-family:  Helvetica;
+        padding: 10px;
+        &:hover {
+        background: #292f36;
+        color: #f7fff7;    
+        padding: 10px;
+        border-radius: 10px;
+
+        }
+    }
+    .userwrapper{
+        display: grid;
+        grid-template-columns: repeat(2,.5fr);
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2%;
+    
+        @include xs {
+         display: flex;
+         flex-direction: column;       
+         margin-bottom: 2%;
+        }
+    
+        @include sm {
+            grid-template-columns: repeat(1,100px);
+        }
+    
+        @include md {
+            margin: 5%;
+        }
+        .graphcontainer{
+            width:100%;
+            @include xs{
+                margin-top: 15%;
+                margin-left: 2%;
+            }
+    
+            @include sm{
+                margin-top: 8%;
+            }
+    
+            @include md{
+                width: auto;
+            }
+
+            .piecharttitle{
+               font-size: 22px;
+               font-family: Helvetica;
+               color:#f7fff7;
+               text-align: center;
+            }
+        }
+    
+        .textcontainer{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+    
+            
+    
+            .userimage{
+                width: auto;
+                height: 200px;
+                border-radius: 30px;
+    
+                @include xs {
+                    height: 100px;
+                }
+    
+                @include sm{
+                    height: 200px;
+                }
+    
+                @include md{
+                    height: 250px;
+                }
+            }
+            .userfullname{
+                font-size: 2rem;
+                font-family: Helvetica;
+                text-decoration: underline;
+                color:#f7fff7;
+                @include xs{
+                    font-size: 1.7rem;
+                }
+            }
+            .usersname,.joindate{
+                font-size: 1.2rem;
+                font-family: Helvetica;
+                text-align: center;
+                color:#f7fff7;
+
+            }
+            
+    
+        }
+       
+    }
+    
+}
+
