@@ -1,4 +1,4 @@
-# Rubric Converter
+# Rubric Application
 
 
 #### Table of Contents 
