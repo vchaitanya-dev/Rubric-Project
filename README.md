@@ -1,4 +1,4 @@
-# Currency Converter
+# Rubric Converter
 
 
 #### Table of Contents 
@@ -15,7 +15,7 @@
 
   ### Introduction
 
-Welcome to the Twubric Project Documentation. This document provides an overview Twubric Project application bulit using React, Redux, TypeScript, and SCSS. The application allows used filters and the piechart of the users total, friend, influence and chirpness. 
+Welcome to the Rubric Project Documentation. This document provides an overview Rubric Project application bulit using React, Redux, TypeScript, and SCSS. The application allows used filters and the piechart of the users total, friend, influence and chirpness. 
 
 ### Installation 
 To get started with the Twubric application, Follow these steps: 
