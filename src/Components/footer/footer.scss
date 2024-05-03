@@ -1,0 +1,24 @@
+.footercontainer {
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	padding: 15px;
+
+    .footertitle {
+        font-size: 16px;
+        text-align: center;
+        font-family: Helvetica;
+        color:#292f36;
+    }
+    .footertext {
+        font-size: 14px;
+        text-align: center;
+        font-family: Helvetica;
+        color:#292f36;
+    }
+}
+

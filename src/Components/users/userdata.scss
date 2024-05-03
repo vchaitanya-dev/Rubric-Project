@@ -1,0 +1,129 @@
+@import '../../responsive.scss';
+.usersinfo {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: minmax(180px, auto);
+	grid-auto-flow: dense;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	@include lg{
+		grid-template-columns: repeat(3,1fr);
+	}
+
+	@include md{
+		grid-template-columns: repeat(2,1fr);
+	}
+
+	@include xs{
+		grid-template-columns: repeat(1,1fr);
+	}
+
+	.userinfo {
+		background: #292f36;
+		padding: 4%;
+		border-radius: 30px;
+		.username{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-evenly;
+			margin-bottom: 15px;
+		}
+		.cardtitle {
+			background: none;
+			font-size: 18px;
+			text-align: center;
+			font-family: Helvetica;
+			color: #f7fff7;
+		}
+		.cardimage {
+			width: 180px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 10px;
+		}
+		.cardtotal {
+			font-size: 18px;
+			text-align: center;
+			color:#4ecdc4;
+			font-family: Helvetica;
+		}
+		.iconsection {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding:5px;
+			h3{
+				font-family: Helvetica;
+				font-size: 18px;
+				color:#4ecdc4;
+				border-right: 2px solid #4ecdc4;
+				letter-spacing: 4px;
+				padding-right: 5px;
+			}
+			.icons{
+				background: none;
+				fill: #f7fff7;
+				justify-self: end;
+			}
+			
+		}
+
+		.userdata{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			margin-top: 2%;
+			color:#4ecdc4;
+			.userfriend{
+				border: 2px solid #4ecdc4;
+				width: 80px;
+				padding: 1%;	
+				text-align: center;
+				h3{
+					font-size: 14px;
+					font-family:  Helvetica;
+				}
+				p{
+					font-size: 10px;
+					font-family: Helvetica;
+		
+				}
+			}
+			.userinfluence{
+				border: 2px solid #4ecdc4;
+				width: 80px;		
+				padding: 1%;	
+				text-align: center;
+				h3{
+					font-size: 14px;
+					font-family:  Helvetica;
+				}
+				p{
+					font-size: 10px;
+					font-family: Helvetica;
+				}
+			}
+			.userchirp{
+				border: 2px solid #4ecdc4;
+				width: 80px;
+				padding: 1%;
+				text-align: center;
+				h3{
+					font-size: 14px;
+					font-family:  Helvetica;
+				}
+				p{
+					font-size: 10px;
+					font-family: Helvetica;
+				}
+			}
+			
+			
+		}
+	}
+}

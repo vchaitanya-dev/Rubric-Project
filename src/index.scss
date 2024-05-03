@@ -1,0 +1,83 @@
+@import './responsive.scss';
+
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	
+}
+body{
+	background: #4ecdc4;
+}
+.container {
+	width: 100%;
+	height: 100vh;
+}
+.filtertitle {
+	font-family: Helvetica;
+	font-size: 20px;
+	text-align: left;
+	margin-left: 2%;
+}
+.sortfilter {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
+	margin: 2%;
+}
+.datefilter {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
+	margin: 2%;
+}
+.filterinput {
+	width: 200px;
+	height: 8vh;
+	padding: 5px 10px;
+	font-size: 14px;
+	font-family: Helvetica;
+	text-align: center;
+	outline: none;
+	border: 2px solid #f7fff7;
+	border-radius: 10px;
+	font-weight: 600;
+	background:#292f36;
+	color:#f7fff7;
+}
+.filterinput option {
+	background: #292f36;
+	color:#f7fff7;
+	&:hover{
+		color: #f7fff7;
+		background: #4ecdc4;
+	};
+	&:active{
+		color: #f7fff7;
+		background: #4ecdc4;
+	};
+}
+.user {
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 2%;
+}
+.usertitle {
+	font-size: 20px;
+	font-family: Helvetica;
+	text-align: center;
+	text-transform: capitalize;
+	margin-top: -5%;
+	margin-bottom: 2%;
+}
+
+
+
+
